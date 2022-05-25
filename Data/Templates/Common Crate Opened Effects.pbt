@@ -1,6 +1,6 @@
 Assets {
   Id: 15123159407239660014
-  Name: "Crate Opened Effects"
+  Name: "Common Crate Opened Effects"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

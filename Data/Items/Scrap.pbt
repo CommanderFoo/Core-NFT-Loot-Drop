@@ -1,27 +1,27 @@
 Assets {
-  Id: 2397021834605411311
-  Name: "Magic Bars"
+  Id: 14553213536522306652
+  Name: "Scrap"
   PlatformAssetType: 33
   SerializationVersion: 115
   VirtualFolderPath: "Inventory"
   ItemAsset {
-    CustomName: "Magic Bars"
-    MaximumStackCount: 5
+    CustomName: "Scrap"
+    MaximumStackCount: 10
     CustomParameters {
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 4793772474909458083
+          Id: 11427362453719108242
         }
       }
     }
     Assets {
-      Id: 4793772474909458083
-      Name: "Fantasy Craft Bar 003"
+      Id: 11427362453719108242
+      Name: "Survival Craft Bolt 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Bar_003"
+        AssetId: "UI_Survival_Crafting_Bolt_001"
       }
     }
   }

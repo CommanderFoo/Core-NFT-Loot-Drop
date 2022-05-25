@@ -1,13 +1,13 @@
 Assets {
-  Id: 16976206988616612774
-  Name: "Crate Impact Effects"
+  Id: 16927647446335742898
+  Name: "Epic Crate Opened Effects"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4013699191749165119
+      RootId: 12382080761893270478
       Objects {
-        Id: 4013699191749165119
-        Name: "Crate Impact Effects"
+        Id: 12382080761893270478
+        Name: "Epic Crate Opened Effects"
         Transform {
           Scale {
             X: 1
@@ -16,9 +16,8 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 7772580567406536008
-        ChildIds: 7543721756870869671
-        Lifespan: 2
+        ChildIds: 15970225889141606499
+        ChildIds: 10780693047514010992
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -45,8 +44,8 @@ Assets {
         }
       }
       Objects {
-        Id: 7772580567406536008
-        Name: "Crate Smoke Puff VFX"
+        Id: 15970225889141606499
+        Name: "Chest Magic Opening 03 SFX"
         Transform {
           Location {
           }
@@ -58,28 +57,76 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4013699191749165119
+        ParentId: 12382080761893270478
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        EditorIndicatorVisibility {
+          Value: "mc:eindicatorvisibility:visiblewhenselected"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 9979122549973209582
+          }
+          AutoPlay: true
+          Volume: 1
+          Falloff: 2000
+          Radius: -1
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 10780693047514010992
+        Name: "Callout Sparkle"
+        Transform {
+          Location {
+            Y: -6.51373291
+            Z: 54.7943802
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.62095177
+            Y: 0.725727797
+            Z: 1.23244536
+          }
+        }
+        ParentId: 12382080761893270478
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Radius"
-            Float: 1.68088663
+            Name: "bp:Life"
+            Float: 2
           }
           Overrides {
             Name: "bp:Gravity"
-            Float: -2.21601772
+            Float: 0.168574214
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 3.66520715
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 12.0974674
           }
           Overrides {
             Name: "bp:Color"
             Color {
-              R: 2
-              G: 1.49296474
-              B: 1.06800008
-              A: 0.822
+              R: 1
+              G: 0.590666652
+              B: 0.386000037
+              A: 1
             }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 1.35173202
           }
         }
         Collidable_v2 {
@@ -96,7 +143,7 @@ Assets {
         }
         Blueprint {
           BlueprintAsset {
-            Id: 15171394069169531044
+            Id: 13296599496876515915
           }
           TeamSettings {
           }
@@ -111,66 +158,23 @@ Assets {
           Value: "mc:eproxyrelevance:critical"
         }
       }
-      Objects {
-        Id: 7543721756870869671
-        Name: "Chest Normal Landing 01 SFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4013699191749165119
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        EditorIndicatorVisibility {
-          Value: "mc:eindicatorvisibility:visiblewhenselected"
-        }
-        AudioInstance {
-          AudioAsset {
-            Id: 8044773995417801347
-          }
-          AutoPlay: true
-          Transient: true
-          Volume: 1
-          Falloff: 338.774017
-          Radius: 1059.01318
-          IsSpatializationEnabled: true
-          IsAttenuationEnabled: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
     }
     Assets {
-      Id: 15171394069169531044
-      Name: "Smoke Puff VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_smoke_puff"
-      }
-    }
-    Assets {
-      Id: 8044773995417801347
-      Name: "Chest Normal Landing 01 SFX"
+      Id: 9979122549973209582
+      Name: "Chest Magic Opening 03 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_chest_normal_landing_01_Cue_ref"
+        AssetId: "sfx_chest_magic_opening_03_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 13296599496876515915
+      Name: "Callout Sparkle"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_sparkles_volume_vfx"
       }
     }
     PrimaryAssetId {

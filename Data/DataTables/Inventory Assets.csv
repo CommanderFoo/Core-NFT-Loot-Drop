@@ -1,2 +1,4 @@
-"key[String]","asset[Asset Reference]","loot_value[String]","chest_rarity[String]","drop_chance[Int]"
-"jp","2143EEA89A82BBEF","Magic Bars","Common","100"
+"key[String]","asset[Asset Reference]","name[String]","loot_value[String]","loot_rarity[String]","loot_chance[Int]","loot_min[Int]","loot_max[Int]"
+"sm","C9F7669AF0D1845C","Scrap Metal","","Common","100","1","5"
+"mb","2143EEA89A82BBEF","Magic Bar","Ice Gem #862","Epic","50","1","5"
+"","4B4CD36D9B545E1D","Smarty Bar","Metatriad #1889","Rare","50","1","5"

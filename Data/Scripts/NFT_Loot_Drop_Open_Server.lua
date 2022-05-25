@@ -18,9 +18,10 @@ local function open_crate(trigger, other)
 	local owner = ROOT:GetCustomProperty("Owner")
 
 	if(other:IsA("Player") and owner == other.id) then
-		NFT_Loop_Drop.open_crate(other, ROOT)
-		TRIGGER:Destroy()
-		has_opened = true
+		if(NFT_Loop_Drop.open_crate(other, ROOT)) then
+			TRIGGER:Destroy()
+			has_opened = true
+		end
 	end
 end
 

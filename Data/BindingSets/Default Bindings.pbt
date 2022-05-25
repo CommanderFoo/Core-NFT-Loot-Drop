@@ -26,6 +26,7 @@ Assets {
       CoreBehavior {
         Value: "mc:ecorebehavior:jump"
       }
+      Networked: true
       IsEnabledOnStart: true
     }
     Bindings {

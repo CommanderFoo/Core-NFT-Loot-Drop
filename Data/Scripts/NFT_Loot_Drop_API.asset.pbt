@@ -29,9 +29,9 @@ Assets {
         }
       }
       Overrides {
-        Name: "cs:CrateOpenedEffects"
+        Name: "cs:CrateDestroyedEffect"
         AssetReference {
-          Id: 15123159407239660014
+          Id: 7370138340834181930
         }
       }
     }

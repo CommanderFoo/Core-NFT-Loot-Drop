@@ -1,4 +1,13 @@
 Assets {
+  Id: 10167384942167303893
+  Name: "Survival Gear Backpack 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Survival_Gear_Back_003"
+  }
+}
+Assets {
   Id: 3839519509431907484
   Name: "BG Flat 002"
   PlatformAssetType: 9

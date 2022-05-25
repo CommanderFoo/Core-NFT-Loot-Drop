@@ -1,13 +1,13 @@
 Assets {
-  Id: 6161220687979383411
-  Name: "Common Crate"
+  Id: 1678339685588577002
+  Name: "Rare Crate"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9637512868482409316
+      RootId: 9131790868958503318
       Objects {
-        Id: 9637512868482409316
-        Name: "Common Crate"
+        Id: 9131790868958503318
+        Name: "Rare Crate"
         Transform {
           Scale {
             X: 1
@@ -16,10 +16,10 @@ Assets {
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 2626240496784124787
-        ChildIds: 4779988456507087373
-        ChildIds: 16971757967728404878
-        ChildIds: 9003286243674469390
+        ChildIds: 16102539501604907393
+        ChildIds: 13353207672105179391
+        ChildIds: 1189577565745998716
+        ChildIds: 9797555351647401724
         UnregisteredParameters {
           Overrides {
             Name: "cs:Owner"
@@ -71,20 +71,21 @@ Assets {
         }
       }
       Objects {
-        Id: 2626240496784124787
+        Id: 16102539501604907393
         Name: "Collision"
         Transform {
           Location {
+            Y: -0.385284424
           }
           Rotation {
           }
           Scale {
-            X: 1.1646347
-            Y: 0.868748
-            Z: 0.85498625
+            X: 1.385602
+            Y: 0.962183475
+            Z: 1.00816822
           }
         }
-        ParentId: 9637512868482409316
+        ParentId: 9131790868958503318
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -121,7 +122,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4779988456507087373
+        Id: 13353207672105179391
         Name: "Geo"
         Transform {
           Location {
@@ -136,10 +137,10 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9637512868482409316
-        ChildIds: 2160953169685309565
-        ChildIds: 18444835109980200977
-        ChildIds: 14177852114954569084
+        ParentId: 9131790868958503318
+        ChildIds: 4594842515288901518
+        ChildIds: 13257733519779763794
+        ChildIds: 7168735320907303730
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -165,244 +166,7 @@ Assets {
         }
       }
       Objects {
-        Id: 2160953169685309565
-        Name: "Common Crate base"
-        Transform {
-          Location {
-            X: -13.25
-            Y: 18.5
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4779988456507087373
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6400415333480265935
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 18444835109980200977
-        Name: "Lid"
-        Transform {
-          Location {
-            X: 13.25
-            Y: -18.5
-            Z: 67
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4779988456507087373
-        ChildIds: 3618262868798642822
-        ChildIds: 14028857383568164833
-        ChildIds: 11307830836533495094
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Folder {
-          IsGroup: true
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 3618262868798642822
-        Name: "Military Common Crate Hinge"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18444835109980200977
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16400015035755492128
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 14028857383568164833
-        Name: "Military Common Crate Hinge"
-        Transform {
-          Location {
-            X: -53
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18444835109980200977
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 16400015035755492128
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 11307830836533495094
-        Name: "Military Common Crate Lid"
-        Transform {
-          Location {
-            X: -26.5
-            Y: 1
-            Z: 1
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 18444835109980200977
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CameraCollidable {
-          Value: "mc:ecollisionsetting:forceon"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17933570741495538470
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          InteractWithTriggers: true
-          StaticMesh {
-            Physics {
-            }
-            BoundsScale: 1
-          }
-        }
-        Relevance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-        NetworkRelevanceDistance {
-          Value: "mc:eproxyrelevance:critical"
-        }
-      }
-      Objects {
-        Id: 14177852114954569084
+        Id: 4594842515288901518
         Name: "NFT_Loot_Drop_Open_Client"
         Transform {
           Location {
@@ -417,24 +181,24 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4779988456507087373
+        ParentId: 13353207672105179391
         UnregisteredParameters {
           Overrides {
             Name: "cs:Root"
             ObjectReference {
-              SubObjectId: 9637512868482409316
+              SubObjectId: 9131790868958503318
             }
           }
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 9003286243674469390
+              SubObjectId: 9797555351647401724
             }
           }
           Overrides {
             Name: "cs:Lid"
             ObjectReference {
-              SubObjectId: 18444835109980200977
+              SubObjectId: 13257733519779763794
             }
           }
           Overrides {
@@ -466,7 +230,242 @@ Assets {
         }
       }
       Objects {
-        Id: 16971757967728404878
+        Id: 13257733519779763794
+        Name: "Lid"
+        Transform {
+          Location {
+            X: -43.25
+            Y: -28.5
+            Z: 70
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13353207672105179391
+        ChildIds: 14172602023782367056
+        ChildIds: 896380954073298177
+        ChildIds: 1580481848048273100
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 14172602023782367056
+        Name: "Military Rare Crate Hinge"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13257733519779763794
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14803841533992348173
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 896380954073298177
+        Name: "Military Rare Crate Hinge"
+        Transform {
+          Location {
+            X: 60
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13257733519779763794
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14803841533992348173
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 1580481848048273100
+        Name: "Military Rare Crate Lid"
+        Transform {
+          Location {
+            X: 30
+            Y: 3.5
+            Z: -5
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13257733519779763794
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6648688902516484551
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 7168735320907303730
+        Name: "Crate"
+        Transform {
+          Location {
+            X: -13.25
+            Y: 18.5
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13353207672105179391
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:forceon"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5458790514689601451
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          InteractWithTriggers: true
+          StaticMesh {
+            Physics {
+            }
+            BoundsScale: 1
+          }
+        }
+        Relevance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+        NetworkRelevanceDistance {
+          Value: "mc:eproxyrelevance:critical"
+        }
+      }
+      Objects {
+        Id: 1189577565745998716
         Name: "Server"
         Transform {
           Location {
@@ -479,8 +478,8 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 9637512868482409316
-        ChildIds: 4477734494285435655
+        ParentId: 9131790868958503318
+        ChildIds: 14204892267636756981
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -501,7 +500,7 @@ Assets {
         }
       }
       Objects {
-        Id: 4477734494285435655
+        Id: 14204892267636756981
         Name: "NFT_Loot_Drop_Open_Server"
         Transform {
           Location {
@@ -514,7 +513,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 16971757967728404878
+        ParentId: 1189577565745998716
         UnregisteredParameters {
           Overrides {
             Name: "cs:NFT_Loot_Drop_API"
@@ -525,13 +524,13 @@ Assets {
           Overrides {
             Name: "cs:Root"
             ObjectReference {
-              SubObjectId: 9637512868482409316
+              SubObjectId: 9131790868958503318
             }
           }
           Overrides {
             Name: "cs:Trigger"
             ObjectReference {
-              SubObjectId: 9003286243674469390
+              SubObjectId: 9797555351647401724
             }
           }
         }
@@ -557,22 +556,22 @@ Assets {
         }
       }
       Objects {
-        Id: 9003286243674469390
+        Id: 9797555351647401724
         Name: "Trigger"
         Transform {
           Location {
             Y: 33.9215851
-            Z: 47.4298668
+            Z: 65.0323181
           }
           Rotation {
           }
           Scale {
             X: 1.29911911
             Y: 1.2267518
-            Z: 1.46754062
+            Z: 1.6318388
           }
         }
-        ParentId: 9637512868482409316
+        ParentId: 9131790868958503318
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -611,30 +610,30 @@ Assets {
       }
     }
     Assets {
-      Id: 6400415333480265935
-      Name: "Military Common Crate Base"
+      Id: 14803841533992348173
+      Name: "Military Crate Hinge 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_mil_crate_001_ref"
+        AssetId: "sm_prop_mil_crate_hinge_002_ref"
       }
     }
     Assets {
-      Id: 16400015035755492128
-      Name: "Military Crate Hinge 01"
+      Id: 6648688902516484551
+      Name: "Military Rare Crate Lid"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_mil_crate_hinge_001_ref"
+        AssetId: "sm_prop_mil_crate_lid_002_ref"
       }
     }
     Assets {
-      Id: 17933570741495538470
-      Name: "Military Common Crate Lid"
+      Id: 5458790514689601451
+      Name: "Military Rare Crate Base"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_prop_mil_crate_lid_001_ref"
+        AssetId: "sm_prop_mil_crate_002_ref"
       }
     }
     PrimaryAssetId {

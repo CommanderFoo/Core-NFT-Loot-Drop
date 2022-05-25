@@ -50,12 +50,44 @@ Objects {
   ParentId: 4781671109827199097
   UnregisteredParameters {
     Overrides {
+      Name: "cs:CollectionAddress"
+      String: "0xca590be85a184b8ed837b28966602d543569e41f"
+    }
+    Overrides {
+      Name: "cs:CrateSpawnPoints"
+      ObjectReference {
+        SelfId: 1030559185868980364
+      }
+    }
+    Overrides {
       Name: "cs:CrateZStartPoint"
       Float: 2000
     }
     Overrides {
+      Name: "cs:WalletItemChance"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:CollectionItemChance"
+      Float: 0
+    }
+    Overrides {
       Name: "cs:NoLootItem"
-      String: "Scrap Material"
+      AssetReference {
+        Id: 14553213536522306652
+      }
+    }
+    Overrides {
+      Name: "cs:CrateZStartPoint:tooltip"
+      String: "The Z position of the crate when it spawns in. The crate will be moved down over time to the area point."
+    }
+    Overrides {
+      Name: "cs:CrateSpawnPoints:isrep"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:CrateSpawnPoints:ml"
+      Bool: false
     }
   }
   Collidable_v2 {
