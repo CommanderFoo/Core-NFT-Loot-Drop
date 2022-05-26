@@ -5,24 +5,45 @@ Assets {
   SerializationVersion: 115
   VirtualFolderSetAsset {
     Folders {
-      VirtualFolderPath: "Inventory"
-      PlatformAssetType: 3
+      VirtualFolderPath: "NFT Loot Drop"
+      PlatformAssetType: 5
     }
     Folders {
+      VirtualFolderPath: "NFT Loot Drop"
       VirtualFolderPath: "Inventory"
       PlatformAssetType: 5
     }
     Folders {
-      VirtualFolderPath: "Inventory"
-      PlatformAssetType: 31
+      VirtualFolderPath: "NFT Loot Drop"
+      PlatformAssetType: 3
     }
     Folders {
+      VirtualFolderPath: "NFT Loot Drop"
+      VirtualFolderPath: "Tween"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "NFT Loot Drop"
+      VirtualFolderPath: "Inventory"
+      PlatformAssetType: 3
+    }
+    Folders {
+      VirtualFolderPath: "NFT Loot Drop"
+      PlatformAssetType: 33
+    }
+    Folders {
+      VirtualFolderPath: "NFT Loot Drop"
       VirtualFolderPath: "Inventory"
       PlatformAssetType: 33
     }
     Folders {
-      VirtualFolderPath: "Tween"
-      PlatformAssetType: 3
+      VirtualFolderPath: "NFT Loot Drop"
+      PlatformAssetType: 31
+    }
+    Folders {
+      VirtualFolderPath: "NFT Loot Drop"
+      VirtualFolderPath: "Inventory"
+      PlatformAssetType: 31
     }
   }
 }

@@ -36,7 +36,7 @@ local function show_notification(asset_id, quantity)
 			queue:push(string.format("x%s %s", quantity, name))
 		end
 	else
-		queue:push(string.format("Inventory full"))
+		queue:push("Inventory full")
 	end
 end
 
@@ -88,3 +88,6 @@ function Tick(dt)
 end
 
 Events.Connect("NFTLoot.Notify", show_notification)
+Events.Connect("NFTLoot.NotOwner", function()
+	queue:push("Not your crate!")
+end)

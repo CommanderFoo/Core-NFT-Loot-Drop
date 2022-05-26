@@ -15,7 +15,7 @@ Objects {
     }
   }
   ChildIds: 6091589806862136508
-  ChildIds: 16283546463645705078
+  ChildIds: 4678680307045302864
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,13 +34,9 @@ Objects {
   }
 }
 Objects {
-  Id: 16283546463645705078
+  Id: 4678680307045302864
   Name: "NFT Loot Drop"
   Transform {
-    Location {
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -48,66 +44,19 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:CollectionAddress"
-      String: "0xca590be85a184b8ed837b28966602d543569e41f"
-    }
-    Overrides {
-      Name: "cs:CrateSpawnPoints"
-      ObjectReference {
-        SelfId: 1030559185868980364
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 13184223503303680389
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NFT Loot Drop"
+        }
       }
     }
-    Overrides {
-      Name: "cs:CrateZStartPoint"
-      Float: 2000
+    TemplateAsset {
+      Id: 6284578282830536335
     }
-    Overrides {
-      Name: "cs:WalletItemChance"
-      Float: 10
-    }
-    Overrides {
-      Name: "cs:CollectionItemChance"
-      Float: 0
-    }
-    Overrides {
-      Name: "cs:NoLootItem"
-      AssetReference {
-        Id: 14553213536522306652
-      }
-    }
-    Overrides {
-      Name: "cs:CrateZStartPoint:tooltip"
-      String: "The Z position of the crate when it spawns in. The crate will be moved down over time to the area point."
-    }
-    Overrides {
-      Name: "cs:CrateSpawnPoints:isrep"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:CrateSpawnPoints:ml"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CameraCollidable {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  EditorIndicatorVisibility {
-    Value: "mc:eindicatorvisibility:visiblewhenselected"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "NFT Loot Drop"
-  }
-  NetworkRelevanceDistance {
-    Value: "mc:eproxyrelevance:critical"
   }
 }
 Objects {

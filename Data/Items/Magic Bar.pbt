@@ -3,6 +3,7 @@ Assets {
   Name: "Magic Bar"
   PlatformAssetType: 33
   SerializationVersion: 115
+  VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
   ItemAsset {
     CustomName: "Magic Bar"

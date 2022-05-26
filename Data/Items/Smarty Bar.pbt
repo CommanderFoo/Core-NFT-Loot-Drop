@@ -3,6 +3,7 @@ Assets {
   Name: "Smarty Bar"
   PlatformAssetType: 33
   SerializationVersion: 115
+  VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
   ItemAsset {
     CustomName: "Smarty Bar"

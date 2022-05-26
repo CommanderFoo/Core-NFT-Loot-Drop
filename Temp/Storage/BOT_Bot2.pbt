@@ -15,7 +15,7 @@ Entries {
                 IntVar: 1
               }
               SimpleValue {
-                StringVar: "mb"
+                StringVar: "sm"
               }
             }
             Entries {
@@ -23,7 +23,7 @@ Entries {
                 IntVar: 2
               }
               SimpleValue {
-                IntVar: 2
+                IntVar: 4
               }
             }
           }
@@ -35,22 +35,6 @@ Entries {
         }
         SimpleValue {
           Table {
-            Entries {
-              Key {
-                IntVar: 1
-              }
-              SimpleValue {
-                StringVar: "sm"
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 2
-              }
-              SimpleValue {
-                IntVar: 10
-              }
-            }
           }
         }
       }
@@ -60,22 +44,6 @@ Entries {
         }
         SimpleValue {
           Table {
-            Entries {
-              Key {
-                IntVar: 1
-              }
-              SimpleValue {
-                StringVar: "sm"
-              }
-            }
-            Entries {
-              Key {
-                IntVar: 2
-              }
-              SimpleValue {
-                IntVar: 8
-              }
-            }
           }
         }
       }
@@ -197,13 +165,5 @@ Entries {
         }
       }
     }
-  }
-}
-Entries {
-  Key {
-    StringVar: "nftl"
-  }
-  SimpleValue {
-    IntVar: 1653568840
   }
 }

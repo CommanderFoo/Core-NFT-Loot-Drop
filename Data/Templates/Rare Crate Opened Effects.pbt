@@ -183,4 +183,5 @@ Assets {
     }
   }
   SerializationVersion: 115
+  VirtualFolderPath: "NFT Loot Drop"
 }

@@ -164,41 +164,42 @@ function NFT_Loop_Drop.get_loot(player)
 	end
 
 	if(NFT_Loop_Drop.collection_item_chance > 0) then
-		-- local tokens = Blockchain.GetTokens({
+		local tokens = Blockchain.GetTokens({
 		
-		-- 	contractAddress = "0xca590be85a184b8ed837b28966602d543569e41f"
+			contractAddress = NFT_Loop_Drop.collection_address
 
-		-- })
+		})
 
-		-- if(tokens ~= nil) then
-		-- 	local results = tokens:GetResults()
+		if(tokens ~= nil) then
+			local results = tokens:GetResults()
 
-		-- 	while(tokens.hasMoreResults) do
-		-- 		local more_tokens = tokens:GetMoreResults()
+			while(tokens.hasMoreResults) do
+				local more_tokens = tokens:GetMoreResults()
 
-		-- 		for index, token in ipairs(more_tokens) do
-		-- 			results[#results + 1] = token
-		-- 		end
+				for index, token in ipairs(more_tokens) do
+					results[#results + 1] = token
+				end
 
-		-- 		Task.Wait()
-		-- 	end
+				Task.Wait()
+			end
 
-		-- 	for index, token in ipairs(results) do
-			-- local rng = math.random(100)
+			for index, token in ipairs(results) do
+				local rng = math.random(100)
 
-			-- if(NFT_Loop_Drop.collection_item_chance >= rng) then
-			-- 	local item = NFT_Loop_Drop.find_item(token.name)
+				if(NFT_Loop_Drop.collection_item_chance >= rng) then
+					local item = NFT_Loop_Drop.find_item(token.name)
 
-			-- 	if(item ~= nil) then
-			-- 		loot_list[#loot_list + 1] = { token = token, item = item }
-			-- 	end
-			-- end
-		-- end
-
-		-- for index, item in ipairs(loot_list) do
-		-- 	print(item.token.name, item.chance)
-		-- end
+					if(item ~= nil) then
+						loot_list[#loot_list + 1] = { token = token, item = item }
+					end
+				end
+			end
+		end
 	end
+
+	-- for index, item in ipairs(loot_list) do
+	-- 	print(item.token.name, item.chance)
+	-- end
 
 	return NFT_Loop_Drop.pick_from_loot(loot_list)
 end
@@ -321,7 +322,7 @@ function NFT_Loop_Drop.open_crate(player, crate)
 				local data = Storage.GetPlayerData(player)
 
 				data[NFT_Loop_Drop.STORAGE_KEY] = DateTime.CurrentTime().secondsSinceEpoch
-				--Storage.SetPlayerData(player, data)
+				Storage.SetPlayerData(player, data)
 
 				Task.Spawn(function()
 					World.SpawnAsset(CRATE_DESTROYED_EFFECT, {
@@ -367,6 +368,7 @@ function NFT_Loop_Drop.init(opts)
 			return
 		end
 	
+		NFT_Loop_Drop.collection_address = opts.collection_address
 		NFT_Loop_Drop.crate_spawn_points = opts.crate_spawn_points:GetChildren()
 		NFT_Loop_Drop.start_point = opts.crate_z_start_point or 2000
 		NFT_Loop_Drop.wallet_item_chance = opts.wallet_item_chance

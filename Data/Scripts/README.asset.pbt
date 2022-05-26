@@ -1,6 +1,6 @@
 Assets {
-  Id: 4450535636412507475
-  Name: "Tween_Easings"
+  Id: 2809260505788530131
+  Name: "README"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
@@ -8,5 +8,4 @@ Assets {
   }
   SerializationVersion: 115
   VirtualFolderPath: "NFT Loot Drop"
-  VirtualFolderPath: "Tween"
 }

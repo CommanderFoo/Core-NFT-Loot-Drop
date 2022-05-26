@@ -6,6 +6,7 @@ local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
 NFT_Loop_Drop.init({
 	
+	collection_address = ROOT:GetCustomProperty("CollectionAddress"),
 	crate_spawn_points = ROOT:GetCustomProperty("CrateSpawnPoints"):WaitForObject(),
 	crate_z_start_point = ROOT:GetCustomProperty("CrateZStartPoint"),
 	wallet_item_chance = ROOT:GetCustomProperty("WalletItemChance"),

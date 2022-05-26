@@ -3,6 +3,7 @@ Assets {
   Name: "Scrap"
   PlatformAssetType: 33
   SerializationVersion: 115
+  VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
   ItemAsset {
     CustomName: "Scrap"

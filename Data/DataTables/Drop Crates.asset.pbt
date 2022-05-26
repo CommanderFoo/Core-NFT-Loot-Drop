@@ -3,6 +3,7 @@ Assets {
   Name: "Drop Crates"
   PlatformAssetType: 31
   SerializationVersion: 115
+  VirtualFolderPath: "NFT Loot Drop"
   DataTableAsset {
     HasKeyColumn: true
   }

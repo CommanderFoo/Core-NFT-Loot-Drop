@@ -39,6 +39,8 @@ local function open_crate(trigger, other)
 
 		tween:set_easing(Tween.Easings.Out_Cubic)
 		has_opened = true
+	else
+		Events.Broadcast("NFTLoot.NotOwner")
 	end
 end
 
