@@ -387,14 +387,14 @@ function NFT_Loop_Drop.tick(dt)
 	end
 end
 
-if(Environment.IsServer()) then
-	Input.actionPressedEvent:Connect(function(player, action)
-		if(action == "Jump") then
-			for i = 1, (#NFT_Loop_Drop.crate_spawn_points - 1) do
-				NFT_Loop_Drop.drop_loot(player)
-			end
-		end
-	end)
-end
+-- if(Environment.IsServer()) then
+-- 	Input.actionPressedEvent:Connect(function(player, action)
+-- 		if(action == "Jump") then
+-- 			for i = 1, (#NFT_Loop_Drop.crate_spawn_points - 1) do
+-- 				NFT_Loop_Drop.drop_loot(player)
+-- 			end
+-- 		end
+-- 	end)
+-- end
 
 return NFT_Loop_Drop
