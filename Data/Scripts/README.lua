@@ -21,7 +21,7 @@
 	--- NFT Loot Crate Settings ---
 	-------------------------------
 
-	There are varius properties on the NFT Loot Crate folder that you can customise. All properties have tooltips, so you
+	There are various properties on the NFT Loot Crate folder that you can customise. All properties have tooltips, so you
 	can hover over them to get more information.
 
 	--------------------------------------------
@@ -44,8 +44,9 @@
 	--- Craft Spawn Points ---
 	--------------------------
 
-	In the folder "Crate Spawn Points" inside the "NFT Loot Crate" folder, create spawns points by using a Dummy Object from Core Content.
+	In the folder "Crate Spawn Points" inside the "NFT Loot Crate" folder, create spawns points by using a Dummy Object from
+	Core Content.
 
-	The number of spawn points needs to be equal to, or greater than the max players for your game. This is because each player can have 
-	their own loot crate drop down for them, and the system will look for free spots to place the crate in the world.
+	The number of spawn points needs to be equal to, or greater than the max players for your game. This is because each player
+	can have their own loot crate drop down for them, and the system will look for free spots to place the crate in the world.
 --]]
