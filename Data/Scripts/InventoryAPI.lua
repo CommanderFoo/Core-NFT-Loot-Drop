@@ -143,7 +143,7 @@ end
 function API.ClearDraggedItem(reset_inventory_item)
 	if(reset_inventory_item and Object.IsValid(API.ACTIVE.slot)) then
 		API.ACTIVE.slot.opacity = 1
-		API.hide_proxy()
+		API.hideProxy()
 	end
 
 	API.ACTIVE.slot = nil
@@ -154,7 +154,7 @@ function API.ClearDraggedItem(reset_inventory_item)
 	API.ACTIVE.hasItem = false
 end
 
-function API.hide_proxy()
+function API.hideProxy()
 	API.PROXY.visibility = Visibility.FORCE_OFF
 end
 

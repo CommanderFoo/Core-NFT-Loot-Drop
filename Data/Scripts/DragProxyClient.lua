@@ -10,4 +10,4 @@ function Tick()
 	end
 end
 
-Events.Connect("proxy.hide", API.hide_proxy)
+Events.Connect("proxy.hide", API.hideProxy)
