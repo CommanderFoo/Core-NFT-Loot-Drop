@@ -130,11 +130,7 @@ function NFT_Loop_Drop.get_loot(player)
 	local loot_list = {}
 
 	if(NFT_Loop_Drop.wallet_item_chance > 0) then
-		local tokens = Blockchain.GetTokens({
-		
-			playerId = player.id
-
-		})
+		local tokens = Blockchain.GetTokensForPlayer(player.id)
 
 		if(tokens ~= nil) then
 			local results = tokens:GetResults()
@@ -164,11 +160,7 @@ function NFT_Loop_Drop.get_loot(player)
 	end
 
 	if(NFT_Loop_Drop.collection_item_chance > 0) then
-		local tokens = Blockchain.GetTokens({
-		
-			contractAddress = NFT_Loop_Drop.collection_address
-
-		})
+		local tokens = Blockchain.GetTokens(NFT_Loop_Drop.collection_address)
 
 		if(tokens ~= nil) then
 			local results = tokens:GetResults()

@@ -52,6 +52,18 @@ Objects {
           Name: "Name"
           String: "NFT Loot Drop"
         }
+        Overrides {
+          Name: "cs:CollectionAddress"
+          String: "0x5b18c2b5979854411cbfb2f1ba8ffbb03cad2c1e"
+        }
+        Overrides {
+          Name: "cs:CollectionItemChance"
+          Float: 50
+        }
+        Overrides {
+          Name: "cs:WalletItemChance"
+          Float: 50
+        }
       }
     }
     TemplateAsset {
