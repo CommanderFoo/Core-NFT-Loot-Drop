@@ -130,7 +130,7 @@ function NFT_Loop_Drop.get_loot(player)
 	local loot_list = {}
 
 	if(NFT_Loop_Drop.wallet_item_chance > 0) then
-		local tokens = Blockchain.GetTokensForPlayer(player.id)
+		local tokens = Blockchain.GetTokensForPlayer(player)
 
 		if(tokens ~= nil) then
 			local results = tokens:GetResults()
