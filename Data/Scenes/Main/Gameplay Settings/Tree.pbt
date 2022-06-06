@@ -109,8 +109,9 @@ Objects {
     UseAsDefault: true
     AttachToLocalPlayer: true
     InitialDistance: 400
-    MinDistance: 300
-    MaxDistance: 600
+    IsDistanceAdjustable: true
+    MinDistance: 400
+    MaxDistance: 800
     PositionOffset {
       Y: 60
     }
