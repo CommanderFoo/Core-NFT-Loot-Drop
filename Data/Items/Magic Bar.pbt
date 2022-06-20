@@ -2,7 +2,7 @@ Assets {
   Id: 2397021834605411311
   Name: "Magic Bar"
   PlatformAssetType: 33
-  SerializationVersion: 115
+  SerializationVersion: 116
   VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
   ItemAsset {

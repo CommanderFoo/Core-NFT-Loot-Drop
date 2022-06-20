@@ -24,7 +24,7 @@ Assets {
         UnregisteredParameters {
           Overrides {
             Name: "cs:CollectionAddress"
-            String: ""
+            String: "0x5b18c2b5979854411cbfb2f1ba8ffbb03cad2c1e"
           }
           Overrides {
             Name: "cs:CrateSpawnPoints"
@@ -38,11 +38,11 @@ Assets {
           }
           Overrides {
             Name: "cs:WalletItemChance"
-            Float: 0
+            Float: 50
           }
           Overrides {
             Name: "cs:CollectionItemChance"
-            Float: 0
+            Float: 50
           }
           Overrides {
             Name: "cs:NoLootItem"
@@ -4045,6 +4045,6 @@ Assets {
       AssetId: "None"
     }
   }
-  SerializationVersion: 115
+  SerializationVersion: 116
   VirtualFolderPath: "NFT Loot Drop"
 }

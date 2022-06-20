@@ -18,7 +18,7 @@ Assets {
       }
     }
   }
-  SerializationVersion: 115
+  SerializationVersion: 116
   VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
 }

@@ -2,7 +2,7 @@ Assets {
   Id: 14553213536522306652
   Name: "Scrap"
   PlatformAssetType: 33
-  SerializationVersion: 115
+  SerializationVersion: 116
   VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
   ItemAsset {

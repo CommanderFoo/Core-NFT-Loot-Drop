@@ -2,7 +2,7 @@ Assets {
   Id: 5425944118785498653
   Name: "Smarty Bar"
   PlatformAssetType: 33
-  SerializationVersion: 115
+  SerializationVersion: 116
   VirtualFolderPath: "NFT Loot Drop"
   VirtualFolderPath: "Inventory"
   ItemAsset {
