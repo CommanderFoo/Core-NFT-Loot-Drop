@@ -2,14 +2,14 @@
 	Welcome to the README for the NFT Loot Crate Community Content.
 
 	The NFT Loot Crate component will allow you to add loot crates to your game that drop down for each player.
-	An NFT Loot Crate will drop down for the player every 20 hours and when opened by the player they will receive 
+	An NFT Loot Crate will drop down for the player every 20 hours and when opened by the player they will receive
 	a random item that will go into their inventory.
 
 	Items that can be dropped for the player can come from their wallet or a collection specified by you. If there
-	was no item found / picked, then they will receive a default item that can also be specified by you.
+	was no item found/picked, then they will receive a default item that can also be specified by you.
 
 	Note: This comes with an inventory system. If you have your own, you will need to modify the NFT_Loot_Drop_API
-	to support your own inventory system.
+	to support your inventory system.
 
 	--------------------------------------------
 	--- Adding the NFT Loot to the Hierarchy ---
@@ -21,7 +21,7 @@
 	--- NFT Loot Crate Settings ---
 	-------------------------------
 
-	There are various properties on the NFT Loot Crate folder that you can customise. All properties have tooltips, so you
+	There are various properties on the NFT Loot Crate folder that you can customize. All properties have tooltips, so you
 	can hover over them to get more information.
 
 	--------------------------------------------
@@ -41,7 +41,7 @@
 	the player would receive the inventory item assigned to the NFT item.
 
 	--------------------------
-	--- Craft Spawn Points ---
+	--- Crate Spawn Points ---
 	--------------------------
 
 	In the folder "Crate Spawn Points" inside the "NFT Loot Crate" folder, create spawns points by using a Dummy Object from
