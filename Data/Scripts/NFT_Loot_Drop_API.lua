@@ -130,29 +130,37 @@ function NFT_Loop_Drop.get_loot(player)
 	local loot_list = {}
 
 	if(NFT_Loop_Drop.wallet_item_chance > 0) then
-		local tokens = Blockchain.GetTokensForPlayer(player)
+		local wallets_result, wallets_status, wallets_err = Blockchain.GetWalletsForPlayer(player)
 
-		if(tokens ~= nil) then
-			local results = tokens:GetResults()
+		if(wallets_status == BlockchainTokenResultCode.SUCCESS) then
+			local wallets = wallets_result:GetResults()
 
-			while(tokens.hasMoreResults) do
-				local more_tokens = tokens:GetMoreResults()
+			for wallet_index, wallet in ipairs(wallets) do
+				local tokens_result, tokens_status, tokens_err = Blockchain.GetTokensForOwner(wallet.address)
 
-				for index, token in ipairs(more_tokens) do
-					results[#loot_list + 1] = token
-				end
+				if(tokens_status == BlockchainTokenResultCode.SUCCESS) then
+					local tokens = tokens_result:GetResults()
 
-				Task.Wait()
-			end
+					while(tokens.hasMoreResults) do
+						local more_tokens = tokens:GetMoreResults()
 
-			for index, token in ipairs(results) do
-				local rng = math.random(100)
+						for index, token in ipairs(more_tokens) do
+							tokens[#tokens + 1] = token
+						end
 
-				if(NFT_Loop_Drop.wallet_item_chance >= rng) then
-					local item = NFT_Loop_Drop.find_item(token.name)
+						Task.Wait()
+					end
 
-					if(item ~= nil) then
-						loot_list[#loot_list + 1] = { token = token, item = item }
+					for index, token in ipairs(tokens) do
+						local rng = math.random(100)
+		
+						if(NFT_Loop_Drop.wallet_item_chance >= rng) then
+							local item = NFT_Loop_Drop.find_item(token.name)
+		
+							if(item ~= nil) then
+								loot_list[#loot_list + 1] = { token = token, item = item }
+							end
+						end
 					end
 				end
 			end
@@ -346,9 +354,9 @@ function NFT_Loop_Drop.open_crate(player, crate)
 end
 
 function NFT_Loop_Drop.ready(player)
-	if(NFT_Loop_Drop.can_drop_loot(player)) then
+	--if(NFT_Loop_Drop.can_drop_loot(player)) then
 		NFT_Loop_Drop.drop_loot(player)
-	end
+	--end
 end
 
 function NFT_Loop_Drop.init(opts)
@@ -379,14 +387,14 @@ function NFT_Loop_Drop.tick(dt)
 	end
 end
 
--- if(Environment.IsServer()) then
--- 	Input.actionPressedEvent:Connect(function(player, action)
--- 		if(action == "Jump") then
--- 			for i = 1, (#NFT_Loop_Drop.crate_spawn_points - 1) do
--- 				NFT_Loop_Drop.drop_loot(player)
--- 			end
--- 		end
--- 	end)
--- end
+if(Environment.IsServer()) then
+	Input.actionPressedEvent:Connect(function(player, action)
+		if(action == "Jump") then
+			for i = 1, (#NFT_Loop_Drop.crate_spawn_points - 1) do
+				NFT_Loop_Drop.drop_loot(player)
+			end
+		end
+	end)
+end
 
 return NFT_Loop_Drop
